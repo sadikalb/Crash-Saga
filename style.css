@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2, #eb3349);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    min-height: 100vh;
+    position: relative; /* Allows footer to be fixed at the bottom */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 40px;
+    margin: auto; /* Centers the container */
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    flex: 1; /* Allows the container to take available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the content vertically */
+}
+
+h1 {
+    font-size: 1.2em; /* Title size */
+    margin-bottom: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #e0e0e0;
+}
+
+.input-box {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1em;
+    color: #333;
+    outline: none;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.input-box:focus {
+    transform: scale(1.02);
+    border: 2px solid #8e2de2;
+}
+
+.button {
+    background-color: #ff8c00;
+    color: #ffffff;
+    padding: 14px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+.button:hover {
+    background-color: #d77a00;
+    transform: translateY(-3px);
+}
+
+.output {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.output:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #e0e0e0;
+    font-size: 0.9em;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    position: fixed;
+    bottom: 0; /* Fixed to the bottom */
+    left: 0; /* Ensures full width */
+}
+
+.contact {
+    text-decoration: underline;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
